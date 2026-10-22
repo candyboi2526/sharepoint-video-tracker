@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SharePoint Video Tracker",
+  "version": "1.0.0",
+  "description": "Shows 'Opened on <date>' and 'Watched' status next to videos in SharePoint / OneDrive file lists.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.sharepoint.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

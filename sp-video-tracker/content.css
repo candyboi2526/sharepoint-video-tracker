@@ -1,0 +1,43 @@
+.spw-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.spw-status { font-weight: 600; }
+.spw-status.spw-opened  { color: #b25e00; }
+.spw-status.spw-watched { color: #107c10; }
+.spw-btn {
+  font: inherit;
+  font-size: 12px;
+  padding: 1px 8px;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  background: transparent;
+  color: #0f6cbd;
+  cursor: pointer;
+}
+.spw-btn:hover { background: rgba(15, 108, 189, .12); }
+.spw-row-watched [data-id="heroField"] { opacity: .6; }
+
+/* floating panel on the video player page */
+#spw-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  font: 13px "Segoe UI", system-ui, sans-serif;
+}
+#spw-panel .spw-btn { padding: 3px 10px; }
